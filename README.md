@@ -44,8 +44,7 @@ so Finally, my build.gradle file looks like:
 
 ```
 dependencies {
-implementation("com.github.Nashid-Enterprises:verify-android-sdk-public:1.5
-@aar") {
+implementation("com.github.Nashid-Enterprises:verify-android-sdk-public:1.6@aar") {
        setTransitive(true)
    }
 }
