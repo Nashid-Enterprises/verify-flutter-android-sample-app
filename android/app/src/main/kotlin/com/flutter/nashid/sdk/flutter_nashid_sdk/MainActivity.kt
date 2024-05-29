@@ -23,6 +23,7 @@ class MainActivity : FlutterActivity() {
             Log.d("TAG", "configureFlutterEngine: " + call.method)
             if (call.method == ID_METHOD) {
                 callSDK(result,"idcard")
+
             } else if (call.method == PASSPORT_METHOD) {
                 callSDK(result,"passport")
             } else {
@@ -70,7 +71,7 @@ class MainActivity : FlutterActivity() {
 
             override fun onResultData(jsonObject: JSONObject?, scannedDocType: String?) {
                 Log.d("MainActivity", "onResultData: " + jsonObject)
-                result.success("Open")
+                result.success(jsonObject.toString())
 
             }
 
