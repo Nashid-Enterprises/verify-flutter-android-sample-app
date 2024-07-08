@@ -10,6 +10,7 @@ import io.flutter.plugin.common.MethodChannel
 import org.json.JSONObject
 
 class MainActivity : FlutterActivity() {
+
     private val CHANNEL = "samples.flutter.dev/mychannel"
     private val ID_METHOD = "idcard"
     private val PASSPORT_METHOD = "passport"
@@ -23,7 +24,6 @@ class MainActivity : FlutterActivity() {
             Log.d("TAG", "configureFlutterEngine: " + call.method)
             if (call.method == ID_METHOD) {
                 callSDK(result,"idcard")
-
             } else if (call.method == PASSPORT_METHOD) {
                 callSDK(result,"passport")
             } else {
