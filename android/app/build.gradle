@@ -58,6 +58,7 @@ android {
             signingConfig signingConfigs.debug
         }
     }
+
 }
 
 flutter {
@@ -66,7 +67,7 @@ flutter {
 
 dependencies {
 
-    implementation("com.github.Nashid-Enterprises:verify-android-sdk-public:1.8@aar") {
+    implementation("com.github.Nashid-Enterprises:verify-android-sdk-public:1.9@aar") {
         setTransitive(true)
     }
 
