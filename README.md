@@ -35,7 +35,7 @@ class MainActivity : FlutterActivity() {
 To install NashidSDK, add the following dependency to your app’s build.gradle file:
 
 ```
-implementation("com.github.Nashid-Enterprises:verify-android-sdk-public:1.8@aar") {
+implementation("com.github.Nashid-Enterprises:verify-android-sdk-public:1.9@aar") {
    setTransitive(true)
 }
 ```
@@ -44,7 +44,7 @@ so Finally, my build.gradle file looks like:
 
 ```
 dependencies {
-implementation("com.github.Nashid-Enterprises:verify-android-sdk-public:1.7@aar") {
+implementation("com.github.Nashid-Enterprises:verify-android-sdk-public:1.9@aar") {
        setTransitive(true)
    }
 }
