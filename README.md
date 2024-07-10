@@ -346,15 +346,16 @@ Here is a sample response
 
 ```
 {
-	"Scan": {
-		"Document No": "113414631",
-		"Birth Date": "1984-10-01",
-		"Expiry Date": "2020-20-01",
-		"Name": "RAIS HAIDER",
-		"Nationality": "IND",
-		"Country": "0MN",
-		"Gender": "Male",
-		"MRZ text":  "IDOMN1134146310<<<<<<<<<<<<<<<\n8401108M2001207IND<<<<<<<<<<<0\nRAIS<HAIDER<<<<<<<<<<<<<<<<<<<"
+	"scan":{
+		"Document Type":"ID",
+		"Document No":"113414631",
+		"Birth Date":"1984-10-01",
+		"Expiry Date":"2020-20-01",
+		"Name":"RAIS HAIDER",
+		"Nationality":"IND",
+		"Country":"OMN",
+		"Gender":"Male",
+		"MRZ text":"IDOMN1134146310<<<<<<<<<<<<<<<\n8401108M2001207IND<<<<<<<<<<<0\nRAIS<HAIDER<<<<<<<<<<<<<<<<<<<"
 	},
 	"NFC": {
 		"Identity Number": "0113414631",
@@ -379,18 +380,20 @@ Here is a sample response
 		"Company Name (English)": "ALMAZEM PROJECTS FOR THE MODLE EAST",
 		"Company Address (Arabic)": "\nالموالح, السيب\nالصندوق البريدي 366, الرمز البريدي 114"
 	},
+	"aml":{
+		"AML screening":true
+	},
 	"Liveness": {
-		"AML screening": true,
 		"Liveness Confirmed": false,
 		"Match value": "40 %"
 	},
 	"Images": {
-		"before-crop-front": "android.graphics.Bitmap@a7fae65",
-		"before-crop-back": "android.graphics.Bitmap@69e373a",
-		"after-crop-front": "https://s3api.dev.projectnid.com/cropped-users-imgs/cropped-image-1712290905.422744.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=minioadmin%2F20240405%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240405T042145Z&X-Amz-Expires=18000&X-Amz-SignedHeaders=host&X-Amz-Signature=4d41ff6dca85a5a61179b5ca63a88b43fe54cfe85d562408b757fc2742701417",
-		"after-crop-back": "https://s3api.dev.projectnid.com/cropped-users-imgs/cropped-image-1712290908.232141.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=minioadmin%2F20240405%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240405T042148Z&X-Amz-Expires=18000&X-Amz-SignedHeaders=host&X-Amz-Signature=9ecd03d6d9f10a6bbbd91687151681b74c157628ab75864fc89bc5f25432c97a",
-		"nfc-image": "android.graphics.Bitmap@70d5feb",
-		"liveness-image": "android.graphics.Bitmap@eada148"
+		"before-crop-front":"https:\/\/dashboard.devc1.projectnid.com\/get-file\/IH46EQ5CRMQNQGS?cache-token=lzMxprKcr9blwyDp0fh4QtsZbgoyY7N3Mt4sAFPtTH96yn0S2J",
+		"before-crop-back":"https:\/\/dashboard.devc1.projectnid.com\/get-file\/5DRZC4IE1WYRU6W?cache-token=gigdKcgYLhKSTgQaNzufRkfTcIobzKjXBT0KWzjkGOMVIMcE9n",
+		"after-crop-front":"https:\/\/dashboard.devc1.projectnid.com\/get-file\/OWCOZHKLWUSRVUY?cache-token=pkwXFLUm7JjO2T9ZeToHVtchksTLhkUsqJ15W4eYjGefGDzFzV",
+		"after-crop-back":"https:\/\/dashboard.devc1.projectnid.com\/get-file\/IWO2WVDIM8IH9U1?cache-token=mO9ZOQuPRP0Wjaw117Blxus3HjTC4Bzqj9xhZmSsuiSJnDarAi",
+		"scan-image":"https:\/\/dashboard.devc1.projectnid.com\/get-file\/SI8M60QTPKWNO6Y?cache-token=noiaA1KTKBKg1ndjVEacVV0oHQ7aN2smaUo4eEOuNzQ4APM5b1",
+		"liveness-image":"https:\/\/dashboard.devc1.projectnid.com\/get-file\/UA7VSWLIMQCTZBW?cache-token=VeP7o2yMmZjfCN2NO5J9TqbCd7OhVA6YjV7mKVyKpJn7buCvHb"
 	},
 	"NFC ": "Supported",
 	"Location": {
